@@ -25,5 +25,4 @@ First
 * It will show the identifier, stop proce, and the current auction price and status for each item it's sniping
 * Buyers will be able to add new items for sniping through the UI and the displa values will change in response to events arriving from the auction house
 
-
- 
+![Diagram](site/images/Jackal-UI.png)
