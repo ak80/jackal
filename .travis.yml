@@ -3,6 +3,16 @@ language: java
 jdk:
   - oraclejdk8
 
+sudo: required
+
+services:
+  - docker
+
+before_integrationtest:
+  - docker pull sameersbn/openfire:3.10.3-19
+  - docker run -d -p 127.0.0.1:5222 csameersbn/openfire:3.10.3-19
+  - docker ps -a
+
 script:
   - mvn clean verify package
 
