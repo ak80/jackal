@@ -10,7 +10,7 @@ services:
 
 before_install:
   - docker pull sameersbn/openfire:3.10.3-19
-  - docker run -d -p 127.0.0.1:5222:5222 sameersbn/openfire:3.10.3-19
+  - docker run -d -p 127.0.0.1:5222:5222 -p 127.0.0.1:5223:5223 sameersbn/openfire:3.10.3-19
   - docker ps -a
 
 script:
