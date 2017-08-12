@@ -1,7 +1,8 @@
 package org.ak80.edu.jackal.at;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import static org.ak80.edu.jackal.at.ApplicationRunner.ITEM_0;
 
@@ -26,12 +27,12 @@ public class AuctionSniperEndToEndTest {
     application.showsSniperHasLostAuction();
   }
 
-  @AfterEach
+  @After
   public void stopAuction() {
     auction.stop();
   }
 
-  @AfterEach
+  @After
   public void stopApplication() {
     application.stop();
   }

@@ -1,3 +1,5 @@
+.extract/
 .idea/
 **/*.iml
 **/target
+build/

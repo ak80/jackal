@@ -1,10 +1,11 @@
 package org.ak80.edu.jackal.at;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import org.ak80.edu.jackal.Jackal;
-import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selenide.*;
 
 /**
  * Driver to testing jackal-ui
@@ -12,8 +13,11 @@ import static com.codeborne.selenide.Condition.*;
 public class AuctionSniperDriver {
 
   public AuctionSniperDriver(int timeoutInMillis) {
-    // TODO implement
-    open("/");
+    // TODO wäre FF nicht besser?
+    System.setProperty("webdriver.chrome.driver", "../chromedriver");
+    System.setProperty("selenide.browser", "Chrome");
+
+    open("/jackal");
 //    $("#status").shouldHave(text("Hello, Johny!")); // Waits until element gets text
 
     // TODO
