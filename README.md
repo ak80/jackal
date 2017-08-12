@@ -26,4 +26,9 @@ First
 * Buyers will be able to add new items for sniping through the UI and the displa values will change in response to events arriving from the auction house
 
 
+# Test setup
  
+ For the openfire server, use the docker-compose file. Add accounts with password
+  * sniper / sniper
+  * auction-item-54321 /action
+  * auction-item-65432 / auction
