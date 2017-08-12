@@ -11,7 +11,8 @@ services:
 before_install:
   - docker pull sameersbn/openfire:3.10.3-19
   - docker volume create jackal-openfire-datavolume
-  - docker volume create -d local -o type=bind -o device=src/test/resources/openfire/ --name openfire
+  - mkdir openfire
+  - docker volume create -d local -o type=bind -o device=openfire/ --name openfire
   - docker run -d -v openfire:/usr/lib/openfire -v jackal-openfire-datavolume:/var/openfire -p 127.0.0.1:5222:5222 sameersbn/openfire:3.10.3-19
   - docker ps -a
 
