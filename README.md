@@ -1,3 +1,5 @@
+![build](https://travis-ci.org/ak80/jackal.svg?branch=master)
+
 # jackal
 Auction Sniper for learning along with the example from the book "Growing Object-Oriented Software Guided By Tests"
 
