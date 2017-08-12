@@ -21,6 +21,13 @@
             <groupId>org.igniterealtime.smack</groupId>
             <artifactId>smack</artifactId>
             <version>3.4.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>4.5.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
