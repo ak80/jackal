@@ -4,7 +4,7 @@ services:
 
 # see https://github.com/sameersbn/docker-openfire
   Openfire:
-    image: sameersbn/openfire:3.10.3-19
+    image: ls
     ports:
       - "9090:9090"
       - "5222:5222"
