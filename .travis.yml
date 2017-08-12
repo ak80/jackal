@@ -4,7 +4,7 @@ jdk:
   - oraclejdk8
 
 after_success:
-  - mvn clean test jacoco:report coveralls:report package
+  - mvn clean test jacoco:report coveralls:report verify package
 
 notifications:
   email:
